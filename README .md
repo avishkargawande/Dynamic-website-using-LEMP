@@ -1,89 +1,66 @@
 
-#  Classic Load Balancer A Mini Project
+# Deploying Dynamic Website using LEMP  on Ubuntu
+
+The LEMP (Linux, Nginx, Mysql, PHP) is one of the most popular open-source platforms for hosting dynamic websites and applications.
+ 
+ This project demonstrates how to set up a complete LEMP environment on an Ubuntu EC2 instance, making it easy to deploy and manage dynamic websites in the cloud.
+
+## Components
+
+ **Linux** → Operating System (Ubuntu)
+
+ **Nginx** → Web Server
+
+ **MySQL** → Database Server
+ 
+ **PHP** → Server-side scripting
+##  Steps to Deploy
+ 
+**Step 1:** Create Ubuntu server and connect the server
+[![Screenshot-2025-08-26-233623.png](https://i.postimg.cc/PJ619TQ4/Screenshot-2025-08-26-233623.png)](https://postimg.cc/WqkDJRKF)
+
+[![Screenshot-2025-08-26-230459.png](https://i.postimg.cc/SQZ8yQcL/Screenshot-2025-08-26-230459.png)](https://postimg.cc/XXCXLbHX)
+
+**Step 2:**  Update System Packages
+
+[![Screenshot-2025-08-26-230725.png](https://i.postimg.cc/Pqzp0dtw/Screenshot-2025-08-26-230725.png)](https://postimg.cc/kVGgb3RJ)
+
+**Step 3:** Install, start, enable and check status of Nginx
+
+[![Screenshot-2025-08-26-231109.png](https://i.postimg.cc/9F6DMD09/Screenshot-2025-08-26-231109.png)](https://postimg.cc/4m1f2Nz4)
+
+[![Screenshot-2025-08-26-231522.png](https://i.postimg.cc/8zLjrTf0/Screenshot-2025-08-26-231522.png)](https://postimg.cc/tsCXKQ53)
+
+**Step 4:** Install, start, enable and check status of mysql
+
+[![Screenshot-2025-08-26-231702.png](https://i.postimg.cc/3RxR6pSs/Screenshot-2025-08-26-231702.png)](https://postimg.cc/WDxTqDP8)
+
+[![Screenshot-2025-08-26-231828.png](https://i.postimg.cc/C5ZKM0VJ/Screenshot-2025-08-26-231828.png)](https://postimg.cc/SYh4VwRz)
+
+**Step 5:** Install, start, enable and check status of PHP
+
+[![Screenshot-2025-08-26-232314.png](https://i.postimg.cc/tTJqDb7y/Screenshot-2025-08-26-232314.png)](https://postimg.cc/bDXfNKQF)
 
 
+[![Screenshot-2025-08-26-232535.png](https://i.postimg.cc/hv7SW095/Screenshot-2025-08-26-232535.png)](https://postimg.cc/bSpX1kVx)
 
+**Step 6:**  Create HTML and PHP Page
 
+[![Screenshot-2025-08-26-233309.png](https://i.postimg.cc/K8bgfKb2/Screenshot-2025-08-26-233309.png)](https://postimg.cc/MvsTKpXP)
 
-## Introduction
+**Step 7:**  Verification
+[![Screenshot-2025-08-26-233402.png](https://i.postimg.cc/SR0KK5Nh/Screenshot-2025-08-26-233402.png)](https://postimg.cc/Q9bD4fT4)
 
- This project demonstrates how to deploy an Classic Load Balancer(CLB) in linux. The Classic Load Balancer it
- act like Round-Robin traffic distribution method. The classic load balancer is used in monolithic architecture
- website. The main objective of this project was to learn how to deploy classic load balancer. Finally, The CLB
- name of the classic load balancer is copied and tested to verify traffic disributtion
-
- ### Steps for Implement
-
- #### Step-1: Launch The Three Instance Server-1,Server-2,Server-3.
-
- * Click on the lauch instance.
- * Create a instances Server -3.
-
- [![Screenshot-2025-09-20-190221.png](https://i.postimg.cc/QMtv08g2/Screenshot-2025-09-20-190221.png)](https://postimg.cc/872yCV04)
-
-
- * Click on the advanced details.
- * Go to user data optionl.
-
- [![Screenshot-2025-09-20-191312.png](https://i.postimg.cc/qvf7PFDD/Screenshot-2025-09-20-191312.png)](https://postimg.cc/w7VHJwpD)
-
-
- *  Number of instance Three is creating the 3 instance.
-* Click on the lanuch the instances.
-* Edit the name of the server to server-1,server-2,server-3
-
-[![Screenshot-2025-09-20-191510.png](https://i.postimg.cc/wB4MGjCL/Screenshot-2025-09-20-191510.png)](https://postimg.cc/TymTyfY3)
-
-####  Step-2: Create the load balancer.
-
-[![Screenshot-2025-09-20-191916.png](https://i.postimg.cc/Y2zKrsSy/Screenshot-2025-09-20-191916.png)](https://postimg.cc/Yj0y88Y1)
-
-####  Step-3: Create the classic load balancer & create button.
-
-[![Screenshot-2025-09-20-192020.png](https://i.postimg.cc/RF180Wvn/Screenshot-2025-09-20-192020.png)](https://postimg.cc/7G6XsYGx)
-
-#### Step-4: Assign the name to the classic load balancer
-
-[![Screenshot-2025-09-20-194108.png](https://i.postimg.cc/J4hJ7t8D/Screenshot-2025-09-20-194108.png)](https://postimg.cc/vDpD3Ycb)
-
-####  Step-5: Right click on the availability zones & subnets & Select the security group.
-
-[![Screenshot-2025-09-20-192246.png](https://i.postimg.cc/Fz6KHrb3/Screenshot-2025-09-20-192246.png)](https://postimg.cc/bSQP6jBw)
-
-[![Screenshot-2025-09-20-192301.png](https://i.postimg.cc/ZKybLhFs/Screenshot-2025-09-20-192301.png)](https://postimg.cc/VdmPYphX)
-
-####  Step-6: Add The Instances & Available Instances.
-
-[![Screenshot-2025-09-20-192434.png](https://i.postimg.cc/vH91Znjm/Screenshot-2025-09-20-192434.png)](https://postimg.cc/5649PXfc)
-
-####  Step-7: click on the create loadbalancer.
-
-####  Step-8: Copy the DNS name of the CLB. 
-
-[![Screenshot-2025-09-20-194227.png](https://i.postimg.cc/9Fzp8Lrn/Screenshot-2025-09-20-194227.png)](https://postimg.cc/mtfChN3Y)
+**step 8:** Output
+[![Screenshot-2025-08-26-233418.png](https://i.postimg.cc/KcLzWZJv/Screenshot-2025-08-26-233418.png)](https://postimg.cc/fkzDtQG6)
 
 
 
 
 
 
-##  Expected Output
 
-*  Past CLB DNS name in the new incognito window.
+##  Summary
 
-####  Server-1 
-[![Screenshot-2025-09-20-195342.png](https://i.postimg.cc/5jc6m9H1/Screenshot-2025-09-20-195342.png)](https://postimg.cc/zHjzzrSP)
-
-#### Server-2
-[![Screenshot-2025-09-20-195401.png](https://i.postimg.cc/NjDRQT9H/Screenshot-2025-09-20-195401.png)](https://postimg.cc/cvKvmvcx)
-
-#### Server-3
-[![Screenshot-2025-09-20-195415.png](https://i.postimg.cc/Qxr75Sc7/Screenshot-2025-09-20-195415.png)](https://postimg.cc/QV0VZQ4N)
-
-## Summary
-
-The Classic Load Balancer (CLB) is one of AWS’s legacy load balancing services. It operates at both Layer 4
- (TCP) and Layer 7 (HTTP/HTTPS), distributing incoming traffic across multiple EC2 instances to improve
- application availability and reliability. CLB supports basic features such as SSL termination and sticky sessions,
- making it suitable for small to medium-scale applications. However, for modern and advanced workloads,
- AWS recommends using Application Load Balancer (ALB) or Network Load Balancer (NLB)
+This project demonstrates the deployment of a dynamic website on an Ubuntu EC2 instance using the LEMP (Linux, Nginx, MySQL, PHP). 
+The setup included installing and configuring Nginx as the web server, MySQL as the database server, and PHP with PHP-FPM for dynamic content processing. 
